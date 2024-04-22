@@ -1,19 +1,19 @@
 version: '3.8'
 services:
   movies:
-    image: moulashaik9618/paytmtrain:latest
+    image: moulashaik9618/paytmmovies:latest
     ports:
       - "8081:80"
     deploy:
       replicas: 3
   train:
-    image: moulashaik9618/paytmrecharge:latest
+    image: moulashaik9618/paytmtrain:latest
     ports:
       - "8082:80"
     deploy:
       replicas: 3
   recharge:
-    image: moulashaik9618/paytmmovie:latest
+    image: moulashaik9618/paytmrecharge:latest
     ports:
       - "8083:80"
     deploy:
